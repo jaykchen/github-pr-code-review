@@ -16,7 +16,7 @@ use tiktoken_rs::cl100k_base;
 #[no_mangle]
 #[tokio::main(flavor = "current_thread")]
 pub async fn run() -> anyhow::Result<()> {
-    dotenv().ok();
+    // dotenv().ok();
 
     let login: String = match env::var("login") {
         Err(_) => "jaykchen".to_string(),
